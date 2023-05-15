@@ -5,10 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" href="src/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
 
   <body>
-    <h1 class="text-3xl font-bold underline sm:text-red-300">Hello world!</h1>
+    <section class="h-[1000px] bg-heroGradient">
+      <header class="mx-auto flex max-w-[1336px] justify-between pt-[35px]">
+        <!-- Logo -->
+        <a href="#" class="inline-block h-[17px] w-[146px] bg-logo"></a>
+
+        <!-- Nav -->
+        <nav>
+          <ul class="flex items-center gap-[30px]">
+            <li>
+              <a
+                href="#"
+                class="relative text-[15px] font-medium leading-[22px] text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:opacity-0 after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-100 hover:after:opacity-100"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative text-[15px] font-medium leading-[22px] text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:opacity-0 after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-100 hover:after:opacity-100"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative text-[15px] font-medium leading-[22px] text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:opacity-0 after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-100 hover:after:opacity-100"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative text-[15px] font-medium leading-[22px] text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:opacity-0 after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-100 hover:after:opacity-100"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-[30px]">
+          <a href="#" class="flex items-center gap-1">
+            <span class="inline-block h-[23px] w-[23px] bg-[url('/images/user.svg')]"></span>
+            <span class="text-[15px] font-medium leading-[22px] text-white">Account</span>
+          </a>
+          <a href="#" class="flex items-center gap-1">
+            <span class="inline-block h-[23px] w-[23px] bg-[url('/images/cart-shopping.svg')]"></span>
+            <span class="text-[15px] font-medium leading-[22px] text-white">Cart</span>
+          </a>
+        </div>
+      </header>
+    </section>
   </body>
 </html>
