@@ -6,4 +6,16 @@
   body {
     @apply font-poppins;
   }
+  h1 {
+    @apply text-[60px] font-bold leading-[90px] text-white lg:text-5xl md:text-4xl md:leading-normal sm:text-3xl;
+  }
+  h3 {
+    @apply text-[40px] font-semibold leading-[60px] text-[#464747] md:text-4xl md:leading-normal sm:text-2xl;
+  }
+}
+
+@layer components {
+  .menu-item {
+    @apply relative text-[15px] font-medium leading-[22px] text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:opacity-0 after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-100 hover:after:opacity-100;
+  }
 }

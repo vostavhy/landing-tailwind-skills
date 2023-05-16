@@ -11,51 +11,51 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="src/js/index.js" defer></script>
     <title>Document</title>
   </head>
 
   <body>
-    <section class="h-[1000px] bg-heroGradient">
-      <header class="mx-auto flex max-w-[1336px] justify-between pt-[35px]">
+    <!-- Gradient BG -->
+    <section class="rounded-br-[200px] bg-heroGradient">
+      <!-- Header -->
+      <header class="mx-auto flex max-w-[1336px] justify-between pt-[35px] lg:px-5 sm:pt-5">
         <!-- Logo -->
-        <a href="#" class="inline-block h-[17px] w-[146px] bg-logo"></a>
+        <a href="#" class="z-10 inline-block h-[17px] w-[146px] bg-logo"></a>
 
-        <!-- Nav -->
-        <nav>
+        <!-- Menu Desktop -->
+        <nav class="sm:hidden">
           <ul class="flex items-center gap-[30px]">
             <li>
-              <a
-                href="#"
-                class="relative text-[15px] font-medium leading-[22px] text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:opacity-0 after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-100 hover:after:opacity-100"
-                >Home</a
-              >
+              <a href="#" class="menu-item">Courses</a>
             </li>
             <li>
-              <a
-                href="#"
-                class="relative text-[15px] font-medium leading-[22px] text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:opacity-0 after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-100 hover:after:opacity-100"
-                >Pricing</a
-              >
+              <a href="#" class="menu-item">Pricing</a>
             </li>
             <li>
-              <a
-                href="#"
-                class="relative text-[15px] font-medium leading-[22px] text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:opacity-0 after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-100 hover:after:opacity-100"
-                >About Us</a
-              >
+              <a href="#" class="menu-item">About Us</a>
             </li>
             <li>
-              <a
-                href="#"
-                class="relative text-[15px] font-medium leading-[22px] text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:opacity-0 after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-100 hover:after:opacity-100"
-                >Contact Us</a
-              >
+              <a href="#" class="menu-item">Contact Us</a>
             </li>
           </ul>
         </nav>
 
+        <!-- Menu Mobile -->
+        <nav
+          id="mobile-menu"
+          class="fixed bottom-0 left-0 right-0 top-0 hidden animate-fade-in items-center justify-center bg-heroGradient"
+        >
+          <ul class="flex flex-col items-center gap-10">
+            <li><a class="text-xl text-white" href="#">Courses</a></li>
+            <li><a class="text-xl text-white" href="#">Pricing</a></li>
+            <li><a class="text-xl text-white" href="#">About Us</a></li>
+            <li><a class="text-xl text-white" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+
         <!-- Actions -->
-        <div class="flex items-center gap-[30px]">
+        <div class="flex items-center gap-[30px] md:hidden">
           <a href="#" class="flex items-center gap-1">
             <span class="inline-block h-[23px] w-[23px] bg-[url('/images/user.svg')]"></span>
             <span class="text-[15px] font-medium leading-[22px] text-white">Account</span>
@@ -65,7 +65,82 @@
             <span class="text-[15px] font-medium leading-[22px] text-white">Cart</span>
           </a>
         </div>
+
+        <!-- Burger Menu -->
+        <button class="group relative hidden h-5 w-[30px] sm:block" id="burger">
+          <span
+            class="absolute left-0 top-0 h-[2px] w-full bg-white transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45"
+          ></span>
+          <span
+            class="absolute left-0 top-[9px] h-[2px] w-full bg-white transition-opacity group-[.active]:hidden"
+          ></span>
+          <span
+            class="absolute bottom-0 left-0 h-[2px] w-full bg-white transition-transform group-[.active]:-translate-y-[10px] group-[.active]:-rotate-45"
+          ></span>
+        </button>
       </header>
+
+      <!-- Hero -->
+      <section>
+        <div
+          class="m-auto grid max-w-[1250px] grid-cols-2 pb-[112px] pt-[123px] lg:px-5 lg:pt-20 sm:grid-cols-1 sm:gap-4 sm:pt-10"
+        >
+          <div>
+            <h1>Upgrade YOUR skills for better future</h1>
+            <p
+              class="mt-5 max-w-[527px] text-[22px] font-normal leading-[33px] text-white lg:text-xl md:text-lg sm:text-base"
+            >
+              Lorem ipsum dolor sit amet consectetur. Erat in commodo in a. Sit interdum mi felis laoreet sagittis.
+            </p>
+            <div class="mt-[31px] grid-cols-2 gap-5 sm:mt-4 sm:grid xs:grid-cols-1">
+              <button
+                class="text-4 mr-5 rounded-[12px] bg-[#FF00C7] px-[25px] py-[10px] font-semibold leading-[24px] text-white transition hover:bg-white hover:text-black sm:w-full"
+              >
+                Check Courses
+              </button>
+              <button
+                class="text-4 rounded-[12px] border border-white px-[25px] py-[9px] font-semibold leading-[24px] text-white transition hover:bg-white hover:text-black sm:w-full"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+          <div>
+            <img class="sm:h-auto sm:max-w-full" src="images/hero-img.png" alt="img" />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Companies -->
+    <section>
+      <div class="m-auto max-w-[1073px] py-10 text-center">
+        <h3>Our Company and Partners</h3>
+        <div class="mt-10 flex items-center justify-between lg:gap-5 lg:px-5 md:flex-col xs:mt-5">
+          <div>
+            <img src="images/companies/ms-logo.svg" alt="ms" />
+          </div>
+          <div>
+            <img src="images/companies/tree-logo.svg" alt="img" />
+          </div>
+          <div>
+            <img src="images/companies/amazon-logo.svg" alt="img" />
+          </div>
+          <div>
+            <img src="images/companies/slack.svg" alt="img" />
+          </div>
+          <div>
+            <img src="images/companies/google.svg" alt="img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section>
+      <div>
+        <h2>Our Courses</h2>
+      </div>
     </section>
   </body>
 </html>
