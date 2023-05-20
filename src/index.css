@@ -15,6 +15,9 @@
   h3 {
     @apply text-[40px] font-semibold leading-[60px] text-[#464747] md:text-3xl md:leading-normal sm:text-2xl;
   }
+  h4 {
+    @apply text-[20px] font-semibold leading-[30px] tracking-[-0.002em];
+  }
   h5 {
     @apply text-[15px] font-semibold leading-[22px] tracking-[-0.0024em];
   }
@@ -27,5 +30,9 @@
 
   .tab.active {
     @apply border-b-[2px] border-[#5027B5] pb-[10px] text-[#5027B5];
+  }
+
+  .description {
+    @apply text-base font-normal leading-6 tracking-[-0.002em] text-secondary;
   }
 }
