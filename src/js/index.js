@@ -4,6 +4,9 @@ window.onload = () => {
 
   // Window resize
   addWindowResize();
+
+  // Toggle tabs
+  addToggleTabs();
 };
 
 const toggleBurgerMenu = () => {
@@ -41,4 +44,42 @@ const windowResize = () => {
 
 const addWindowResize = () => {
   window.addEventListener("resize", windowResize);
+};
+
+const toggleTabs = () => {
+  const tabs = document.querySelectorAll(".tab");
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((tab) => {
+        tab.classList.remove("active");
+      });
+      tab.classList.add("active");
+      console.log(tab.innerText);
+      filteredCards(tab.innerText);
+    });
+  });
+};
+
+const addToggleTabs = () => {
+  toggleTabs();
+};
+
+// Filter cards by tag
+const filteredCards = (tagName) => {
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card) => {
+    card.classList.remove("hidden");
+    const tags = card.querySelectorAll(".tag");
+    if (tagName !== "Top Rated") {
+      let isHidden = true;
+      tags.forEach((tag) => {
+        if (tag.innerText.includes(tagName)) {
+          isHidden = false;
+        }
+      });
+      if (isHidden) {
+        card.classList.add("hidden");
+      }
+    }
+  });
 };

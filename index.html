@@ -113,8 +113,8 @@
     </section>
 
     <!-- Companies -->
-    <section>
-      <div class="m-auto max-w-[1073px] py-10 text-center">
+    <section class="pt-10">
+      <div class="m-auto max-w-[1073px] text-center">
         <h3>Our Company and Partners</h3>
         <div class="mt-10 flex items-center justify-between lg:gap-5 lg:px-5 md:flex-col xs:mt-5">
           <div>
@@ -137,9 +137,278 @@
     </section>
 
     <!-- Courses -->
-    <section>
-      <div>
+    <section class="pt-[113px]">
+      <div class="m-auto max-w-[1168px] lg:px-5">
         <h2>Our Courses</h2>
+        <!-- Tabs -->
+        <div class="mt-[30px] flex max-w-[765px] flex-wrap justify-between gap-5">
+          <button class="tab active pb-3 text-[17px] font-normal leading-[26px] tracking-[-0.002em] text-[#787878]">
+            Top Rated
+          </button>
+          <button class="tab pb-3 text-[17px] font-normal leading-[26px] tracking-[-0.002em] text-[#787878]">
+            Development
+          </button>
+          <button class="tab pb-3 text-[17px] font-normal leading-[26px] tracking-[-0.002em] text-[#787878]">
+            Design
+          </button>
+          <button class="tab pb-3 text-[17px] font-normal leading-[26px] tracking-[-0.002em] text-[#787878]">
+            Music
+          </button>
+          <button class="tab pb-3 text-[17px] font-normal leading-[26px] tracking-[-0.002em] text-[#787878]">
+            Marketing
+          </button>
+          <button class="tab pb-3 text-[17px] font-normal leading-[26px] tracking-[-0.002em] text-[#787878]">
+            Business
+          </button>
+          <button class="tab pb-3 text-[17px] font-normal leading-[26px] tracking-[-0.002em] text-[#787878]">
+            Photography
+          </button>
+        </div>
+        <!-- Course Cards -->
+        <div class="grid- mt-[51px] grid grid-cols-4 gap-x-5 gap-y-12">
+          <div
+            class="card h-auto max-w-full animate-fade-in animate-fade-in rounded-[12px] shadow-[0px_0px_9px_0px_#99999740]"
+          >
+            <div>
+              <img src="images/courses/course-1.jpg" alt="img" />
+            </div>
+            <div class="flex min-h-[209px] flex-col justify-between p-[18px]">
+              <div>
+                <button
+                  class="tag rounded-lg bg-[#EAEAEA] px-4 py-2 text-[12px] font-medium leading-[18px] tracking-[-0.0024em] text-secondary"
+                >
+                  Artificial Intelligence
+                </button>
+                <h5 class="mt-4">Modern Artificial Intelligence with zero coding</h5>
+                <p class="mt-1 text-xs font-normal leading-4 tracking-[-0.0024em]">Jhon David</p>
+              </div>
+              <div>
+                <div class="cen mt-2 flex max-w-[109px] items-center justify-between">
+                  <span class="inline-block h-4 w-[84px] bg-[url('/images/stars.svg')]"></span>
+                  <span class="text-[12px] font-semibold leading-4 tracking-[-0.0024em]">4.9</span>
+                </div>
+                <div class="mt-[5px] flex justify-between">
+                  <span class="text-[20px] font-bold leading-[30px] tracking-[-0.0024em] text-primary">$ 49.99</span>
+                  <button
+                    class="rounded-[6px] border border-primary px-[18px] py-[6px] text-[12px] font-bold leading-4 tracking-[-0.0024em] text-primary transition hover:bg-primary hover:text-white"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card h-auto max-w-full animate-fade-in rounded-[12px] shadow-[0px_0px_9px_0px_#99999740]">
+            <div>
+              <img src="images/courses/course-2.jpg" alt="img" />
+            </div>
+            <div class="flex min-h-[209px] flex-col justify-between p-[18px]">
+              <div>
+                <button
+                  class="tag rounded-lg bg-[#EAEAEA] px-4 py-2 text-[12px] font-medium leading-[18px] tracking-[-0.0024em] text-secondary"
+                >
+                  UX/UI Designing
+                </button>
+                <h5 class="mt-4">Figma UX/UI Design essentials</h5>
+                <p class="mt-1 text-xs font-normal leading-4 tracking-[-0.0024em]">Daniel Walter Scott</p>
+              </div>
+              <div>
+                <div class="cen mt-2 flex max-w-[109px] items-center justify-between">
+                  <span class="inline-block h-4 w-[84px] bg-[url('/images/stars.svg')]"></span>
+                  <span class="text-[12px] font-semibold leading-4 tracking-[-0.0024em]">4.9</span>
+                </div>
+                <div class="mt-[5px] flex justify-between">
+                  <span class="text-[20px] font-bold leading-[30px] tracking-[-0.0024em] text-primary">$ 49.99</span>
+                  <button
+                    class="rounded-[6px] border border-primary px-[18px] py-[6px] text-[12px] font-bold leading-4 tracking-[-0.0024em] text-primary transition hover:bg-primary hover:text-white"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card h-auto max-w-full animate-fade-in rounded-[12px] shadow-[0px_0px_9px_0px_#99999740]">
+            <div>
+              <img src="images/courses/course-3.jpg" alt="img" />
+            </div>
+            <div class="flex min-h-[209px] flex-col justify-between p-[18px]">
+              <div>
+                <button
+                  class="tag rounded-lg bg-[#EAEAEA] px-4 py-2 text-[12px] font-medium leading-[18px] tracking-[-0.0024em] text-secondary"
+                >
+                  UX/UI Designing
+                </button>
+                <h5 class="mt-4">Figma UX/UI Design essentials</h5>
+                <p class="mt-1 text-xs font-normal leading-4 tracking-[-0.0024em]">Daniel Walter Scott</p>
+              </div>
+              <div>
+                <div class="cen mt-2 flex max-w-[109px] items-center justify-between">
+                  <span class="inline-block h-4 w-[84px] bg-[url('/images/stars.svg')]"></span>
+                  <span class="text-[12px] font-semibold leading-4 tracking-[-0.0024em]">4.9</span>
+                </div>
+                <div class="mt-[5px] flex justify-between">
+                  <span class="text-[20px] font-bold leading-[30px] tracking-[-0.0024em] text-primary">$ 49.99</span>
+                  <button
+                    class="rounded-[6px] border border-primary px-[18px] py-[6px] text-[12px] font-bold leading-4 tracking-[-0.0024em] text-primary transition hover:bg-primary hover:text-white"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card h-auto max-w-full animate-fade-in rounded-[12px] shadow-[0px_0px_9px_0px_#99999740]">
+            <div>
+              <img src="images/courses/course-4.jpg" alt="img" />
+            </div>
+            <div class="flex min-h-[209px] flex-col justify-between p-[18px]">
+              <div>
+                <button
+                  class="tag rounded-lg bg-[#EAEAEA] px-4 py-2 text-[12px] font-medium leading-[18px] tracking-[-0.0024em] text-secondary"
+                >
+                  Web Development
+                </button>
+                <h5 class="mt-4">The Complete 2022 Fullstack Web Developer course</h5>
+                <p class="mt-1 text-xs font-normal leading-4 tracking-[-0.0024em]">Mark Lassoff</p>
+              </div>
+              <div>
+                <div class="cen mt-2 flex max-w-[109px] items-center justify-between">
+                  <span class="inline-block h-4 w-[84px] bg-[url('/images/stars.svg')]"></span>
+                  <span class="text-[12px] font-semibold leading-4 tracking-[-0.0024em]">4.9</span>
+                </div>
+                <div class="mt-[5px] flex justify-between">
+                  <span class="text-[20px] font-bold leading-[30px] tracking-[-0.0024em] text-primary">$ 49.99</span>
+                  <button
+                    class="rounded-[6px] border border-primary px-[18px] py-[6px] text-[12px] font-bold leading-4 tracking-[-0.0024em] text-primary transition hover:bg-primary hover:text-white"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card h-auto max-w-full animate-fade-in rounded-[12px] shadow-[0px_0px_9px_0px_#99999740]">
+            <div>
+              <img src="images/courses/course-5.jpg" alt="img" />
+            </div>
+            <div class="flex min-h-[209px] flex-col justify-between p-[18px]">
+              <div>
+                <button
+                  class="tag rounded-lg bg-[#EAEAEA] px-4 py-2 text-[12px] font-medium leading-[18px] tracking-[-0.0024em] text-secondary"
+                >
+                  Web Development
+                </button>
+                <h5 class="mt-4">Javascript for beginners</h5>
+                <p class="mt-1 text-xs font-normal leading-4 tracking-[-0.0024em]">Jhon David</p>
+              </div>
+              <div>
+                <div class="cen mt-2 flex max-w-[109px] items-center justify-between">
+                  <span class="inline-block h-4 w-[84px] bg-[url('/images/stars.svg')]"></span>
+                  <span class="text-[12px] font-semibold leading-4 tracking-[-0.0024em]">4.9</span>
+                </div>
+                <div class="mt-[5px] flex justify-between">
+                  <span class="text-[20px] font-bold leading-[30px] tracking-[-0.0024em] text-primary">$ 49.99</span>
+                  <button
+                    class="rounded-[6px] border border-primary px-[18px] py-[6px] text-[12px] font-bold leading-4 tracking-[-0.0024em] text-primary transition hover:bg-primary hover:text-white"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card h-auto max-w-full animate-fade-in rounded-[12px] shadow-[0px_0px_9px_0px_#99999740]">
+            <div>
+              <img src="images/courses/course-6.jpg" alt="img" />
+            </div>
+            <div class="flex min-h-[209px] flex-col justify-between p-[18px]">
+              <div>
+                <button
+                  class="tag rounded-lg bg-[#EAEAEA] px-4 py-2 text-[12px] font-medium leading-[18px] tracking-[-0.0024em] text-secondary"
+                >
+                  Digital Marketing
+                </button>
+                <h5 class="mt-4">Digital Advertising and Marketing 101: The Complete...</h5>
+                <p class="mt-1 text-xs font-normal leading-4 tracking-[-0.0024em]">Ben Silverstain</p>
+              </div>
+              <div>
+                <div class="cen mt-2 flex max-w-[109px] items-center justify-between">
+                  <span class="inline-block h-4 w-[84px] bg-[url('/images/stars.svg')]"></span>
+                  <span class="text-[12px] font-semibold leading-4 tracking-[-0.0024em]">4.9</span>
+                </div>
+                <div class="mt-[5px] flex justify-between">
+                  <span class="text-[20px] font-bold leading-[30px] tracking-[-0.0024em] text-primary">$ 49.99</span>
+                  <button
+                    class="rounded-[6px] border border-primary px-[18px] py-[6px] text-[12px] font-bold leading-4 tracking-[-0.0024em] text-primary transition hover:bg-primary hover:text-white"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card h-auto max-w-full animate-fade-in rounded-[12px] shadow-[0px_0px_9px_0px_#99999740]">
+            <div>
+              <img src="images/courses/course-7.jpg" alt="img" />
+            </div>
+            <div class="flex min-h-[209px] flex-col justify-between p-[18px]">
+              <div>
+                <button
+                  class="tag rounded-lg bg-[#EAEAEA] px-4 py-2 text-[12px] font-medium leading-[18px] tracking-[-0.0024em] text-secondary"
+                >
+                  Digital Marketing
+                </button>
+                <h5 class="mt-4">Mega Digital Marketing course: 12 Courses in 1</h5>
+                <p class="mt-1 text-xs font-normal leading-4 tracking-[-0.0024em]">Phil Ebiner</p>
+              </div>
+              <div>
+                <div class="cen mt-2 flex max-w-[109px] items-center justify-between">
+                  <span class="inline-block h-4 w-[84px] bg-[url('/images/stars.svg')]"></span>
+                  <span class="text-[12px] font-semibold leading-4 tracking-[-0.0024em]">4.9</span>
+                </div>
+                <div class="mt-[5px] flex justify-between">
+                  <span class="text-[20px] font-bold leading-[30px] tracking-[-0.0024em] text-primary">$ 49.99</span>
+                  <button
+                    class="rounded-[6px] border border-primary px-[18px] py-[6px] text-[12px] font-bold leading-4 tracking-[-0.0024em] text-primary transition hover:bg-primary hover:text-white"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card h-auto max-w-full animate-fade-in rounded-[12px] shadow-[0px_0px_9px_0px_#99999740]">
+            <div>
+              <img src="images/courses/course-8.jpg" alt="img" />
+            </div>
+            <div class="flex min-h-[209px] flex-col justify-between p-[18px]">
+              <div>
+                <button
+                  class="tag rounded-lg bg-[#EAEAEA] px-4 py-2 text-[12px] font-medium leading-[18px] tracking-[-0.0024em] text-secondary"
+                >
+                  UX/UI Designing
+                </button>
+                <h5 class="mt-4">User Experience Design Essentials</h5>
+                <p class="mt-1 text-xs font-normal leading-4 tracking-[-0.0024em]">Jacob Murphy</p>
+              </div>
+              <div>
+                <div class="cen mt-2 flex max-w-[109px] items-center justify-between">
+                  <span class="inline-block h-4 w-[84px] bg-[url('/images/stars.svg')]"></span>
+                  <span class="text-[12px] font-semibold leading-4 tracking-[-0.0024em]">4.9</span>
+                </div>
+                <div class="mt-[5px] flex justify-between">
+                  <span class="text-[20px] font-bold leading-[30px] tracking-[-0.0024em] text-primary">$ 49.99</span>
+                  <button
+                    class="rounded-[6px] border border-primary px-[18px] py-[6px] text-[12px] font-bold leading-4 tracking-[-0.0024em] text-primary transition hover:bg-primary hover:text-white"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>

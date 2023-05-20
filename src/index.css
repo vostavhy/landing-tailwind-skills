@@ -9,13 +9,23 @@
   h1 {
     @apply text-[60px] font-bold leading-[90px] text-white lg:text-5xl md:text-4xl md:leading-normal sm:text-3xl;
   }
+  h2 {
+    @apply text-[44px] font-semibold leading-[62px] text-[#464747] md:text-3xl md:leading-normal sm:text-2xl;
+  }
   h3 {
-    @apply text-[40px] font-semibold leading-[60px] text-[#464747] md:text-4xl md:leading-normal sm:text-2xl;
+    @apply text-[40px] font-semibold leading-[60px] text-[#464747] md:text-3xl md:leading-normal sm:text-2xl;
+  }
+  h5 {
+    @apply text-[15px] font-semibold leading-[22px] tracking-[-0.0024em];
   }
 }
 
 @layer components {
   .menu-item {
     @apply relative text-[15px] font-medium leading-[22px] text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:opacity-0 after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-100 hover:after:opacity-100;
+  }
+
+  .tab.active {
+    @apply border-b-[2px] border-[#5027B5] pb-[10px] text-[#5027B5];
   }
 }
