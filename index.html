@@ -523,14 +523,16 @@
     <!--News-->
     <section class="pt-[120px] md:pt-[60px]">
       <div class="min-h-[375px] bg-[url('/images/news/bg-news.jpg')] bg-cover bg-center bg-no-repeat text-center">
-        <h2 class="mt-[30px] inline-block max-w-[365px]">Our Latest news & Article</h2>
+        <h2 class="mt-[30px] inline-block max-w-[365px] md:mt-[50px]">Our Latest news & Article</h2>
       </div>
       <!--News Cards-->
-      <div class="m-auto mb-20 mt-[-195px] flex max-w-[989px] justify-between">
+      <div
+        class="m-auto mt-[-195px] flex max-w-[989px] justify-between lg:gap-4 lg:px-5 md:flex-wrap md:justify-around"
+      >
         <!--Card-->
         <div class="max-w-[313px] overflow-hidden rounded-[12px] shadow-[0px_0px_11px_0px_#9999994D]">
           <div>
-            <img class="h-auto max-w-full" src="/images/news/news-1.jpg" alt="img" />
+            <img class="h-auto w-full max-w-full" src="/images/news/news-1.jpg" alt="img" />
           </div>
           <div class="px-5 py-[15px]">
             <div class="flex items-center">
@@ -607,6 +609,39 @@
               </a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Subscription-->
+    <section class="pt-[121px] sm:pt-14">
+      <div class="m-auto flex max-w-[1080px] items-center justify-between lg:px-5 md:flex-col-reverse sm:px-4">
+        <div class="max-w-[464px]">
+          <img class="max-w-full" src="/images/subscription/email.png" alt="img" />
+        </div>
+        <div class="max-w-[500px]">
+          <h2 class="text-left text-[35px] font-medium leading-[62px] text-[#5228B6] sm:text-[25px]">
+            Subscribe to our newsletter
+          </h2>
+          <p class="mt-1 max-w-[471px] text-[16px] font-normal leading-[24px] tracking-[-0.002em] text-[#666768]">
+            Lorem ipsum dolor sit amet consectetur. Velit enim est urna est massa cras. Sed varius convallis netus
+            aliquet duis ut.
+          </p>
+          <form class="mt-[60px]" action="">
+            <div class="relative flex items-center">
+              <input
+                class="h-[50px] w-[100%] rounded-[12px] border-[1px] px-5 text-[13px] font-medium leading-[22px] shadow-[0px_1px_15px_0px_#00000026] placeholder:text-[#5228B6] focus:outline-none"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <button
+                class="absolute right-0 rounded-[12px] border-[2px] border-[#5228B6] bg-[#5228B6] px-[39px] py-[10px] text-[18px] font-medium leading-[27px] text-white transition hover:bg-[white] hover:text-[#5228B6] focus:outline-none"
+                type="submit"
+              >
+                Join Now
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
